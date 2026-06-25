@@ -1,0 +1,44 @@
+{
+  "name": "spmag",
+  "version": "1.0.0",
+  "description": "Scraper para obtener, descargar y validar información de una pagina Info: Scraper para  extraer información del siguiente sitio web  https://publico.oefa.gob.pe/repdig/consulta/consultaTfa.xhtml. El scraper debe navegar por todas las páginas, extraer los datos de cada documento y descargar los PDFs asociados, manejando correctamente los errores de rate limiting.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeferun/spMag.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jeferun/spMag/issues"
+  },
+  "homepage": "https://github.com/jeferun/spMag#readme",
+  "dependencies": {
+    "axios": "^1.18.1",
+    "axios-retry": "^4.5.0",
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.62.0",
+    "@typescript-eslint/parser": "^8.62.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.8.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

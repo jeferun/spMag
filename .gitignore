@@ -1,0 +1,14 @@
+node_modules/
+dist/
+downloads/
+.env
+data.json
+data.csv
+failed_downloads.json
+
+# Archivos de depuración y temporales generados durante el desarrollo
+debug*
+*.xml
+*.html
+*.txt
+.DS_Store
